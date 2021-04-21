@@ -1,6 +1,6 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle\Services;
+namespace Prokl\CkEditorBundle\Services;
 
 use Bitrix\Main\Application;
 use Bitrix\Main\DB\SqlQueryException;
@@ -13,7 +13,7 @@ use COption;
 /**
  * Class Medialib
  *
- * @package Local\Bundles\CkEditorBundle\Services
+ * @package Prokl\CkEditorBundle\Services
  */
 class MediaLib
 {

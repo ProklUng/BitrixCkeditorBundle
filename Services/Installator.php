@@ -1,12 +1,12 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle\Services;
+namespace Prokl\CkEditorBundle\Services;
 
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Class Installator
- * @package Local\Bundles\CkEditorBundle\Services
+ * @package Prokl\CkEditorBundle\Services
  *
  * @since 21.04.2021
  */

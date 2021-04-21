@@ -1,6 +1,6 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle\Services;
+namespace Prokl\CkEditorBundle\Services;
 
 use Bitrix\Main\Page\Asset;
 

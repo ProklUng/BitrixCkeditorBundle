@@ -1,6 +1,6 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle\Controller;
+namespace Prokl\CkEditorBundle\Controller;
 
 use CFile;
 use CUser;
@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * Class ConnectorController
- * @package Local\Bundles\CkEditorBundle\Controller
+ * @package Prokl\CkEditorBundle\Controller
  *
  * @since 21.04.2021
  */

@@ -6,12 +6,12 @@ services:
 
   # Инициализация битриксового события.
   ckeditor_bundle.bitrix_event_handler_init:
-    class: Local\Bundles\CkEditorBundle\Services\EventCK
+    class: Prokl\CkEditorBundle\Services\EventCK
     tags:
       - { name: bitrix.events.init, module: main, event: OnEpilog, method: register, sort: 0 }
 
   ckeditor_bundle.connector_controller:
-    class: Local\Bundles\CkEditorBundle\Controller\ConnectorController
+    class: Prokl\CkEditorBundle\Controller\ConnectorController
 
   ckeditor_bundle.medialib_controller:
-    class: Local\Bundles\CkEditorBundle\Controller\MediaLibController
+    class: Prokl\CkEditorBundle\Controller\MediaLibController

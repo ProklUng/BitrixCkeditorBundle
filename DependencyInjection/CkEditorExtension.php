@@ -1,12 +1,12 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle\DependencyInjection;
+namespace Prokl\CkEditorBundle\DependencyInjection;
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\LoaderException;
 use Exception;
 use InvalidArgumentException;
-use Local\Bundles\CkEditorBundle\Services\Installator;
+use Prokl\CkEditorBundle\Services\Installator;
 use Local\SymfonyTools\Router\InitRouter;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -15,7 +15,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
  * Class CkEditorExtension
- * @package Local\Bundles\CkEditor\DependencyInjection
+ * @package Prokl\CkEditor\DependencyInjection
  *
  * @since 18.04.2021
  */

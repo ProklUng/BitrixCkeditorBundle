@@ -1,14 +1,14 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle;
+namespace Prokl\CkEditorBundle;
 
 use COption;
-use Local\Bundles\CkEditorBundle\DependencyInjection\CkEditorExtension;
+use Prokl\CkEditorBundle\DependencyInjection\CkEditorExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * Class CkEditorBundle
- * @package Local\Bundles\CkEditorBundle
+ * @package Prokl\CkEditorBundle
  *
  * @since 18.04.2021
  */

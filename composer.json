@@ -15,6 +15,11 @@
     "issues": "https://github.com/ProklUng/BitrixCkeditorBundle/issues",
     "source": "https://github.com/ProklUng/BitrixCkeditorBundle"
   },
+  "autoload": {
+    "psr-4": {
+      "Prokl\\CkEditorBundle\\": ""
+    }
+  },
   "require": {
     "php": ">=7.3",
     "symfony/dependency-injection": "^4.0 || ^5.0",

@@ -1,16 +1,16 @@
 <?php
 
-namespace Local\Bundles\CkEditorBundle\Controller;
+namespace Prokl\CkEditorBundle\Controller;
 
 use Bitrix\Main\DB\SqlQueryException;
 use CMain;
 use CUser;
-use Local\Bundles\CkEditorBundle\Services\MediaLib;
+use Prokl\CkEditorBundle\Services\MediaLib;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * Class MediaLibController
- * @package Local\Bundles\CkEditorBundle\Controller
+ * @package Prokl\CkEditorBundle\Controller
  *
  * @since 21.04.2021
  */
