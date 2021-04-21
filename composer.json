@@ -1,0 +1,26 @@
+{
+  "name": "proklung/bitrixckeditorbundle",
+  "description": "Замена битриксового редактора на CKEditor 5",
+  "type": "symfony-bundle",
+  "homepage": "https://github.com/ProklUng/BitrixCkeditorBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gavrilov Fedy",
+      "email": "fedor.gavrilov.75@mail.ru"
+    }
+  ],
+
+  "support": {
+    "issues": "https://github.com/ProklUng/BitrixCkeditorBundle/issues",
+    "source": "https://github.com/ProklUng/BitrixCkeditorBundle"
+  },
+  "require": {
+    "php": ">=7.3",
+    "symfony/dependency-injection": "^4.0 || ^5.0",
+    "symfony/http-kernel": "^4.0 || ^5.0",
+    "symfony/config": "~4|~5",
+    "symfony/framework-bundle": "^4.0 || ^5.0",
+    "symfony/filesystem": "^4.0 || ^5.0"
+  }
+}

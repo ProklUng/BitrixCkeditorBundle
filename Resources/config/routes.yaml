@@ -1,0 +1,9 @@
+ckeditor_bundle_connector:
+  path: /ckeditor_bundle/connector/
+  methods: ['POST', 'GET']
+  controller: 'Local\Bundles\CkEditorBundle\Controller\ConnectorController::action'
+
+ckeditor_bundle_medialib:
+  path: /ckeditor_bundle/medialib/
+  methods: ['POST', 'GET']
+  controller: 'Local\Bundles\CkEditorBundle\Controller\MediaLibController::action'
