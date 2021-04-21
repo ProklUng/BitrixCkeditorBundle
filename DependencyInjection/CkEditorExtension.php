@@ -105,7 +105,7 @@ final class CkEditorExtension extends Extension
         }
 
         throw new InvalidArgumentException(
-            'Router config class Local\SymfonyTools\Router\RouterConfig not exist.'
+            'Router initializer (class Routes) not exist.'
         );
     }
 }
