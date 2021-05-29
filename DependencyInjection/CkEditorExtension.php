@@ -7,7 +7,7 @@ use Bitrix\Main\LoaderException;
 use Exception;
 use InvalidArgumentException;
 use Prokl\CkEditorBundle\Services\Installator;
-use Local\SymfonyTools\Router\InitRouter;
+use Prokl\BitrixSymfonyRouterBundle\Services\Router\InitRouter;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;

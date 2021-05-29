@@ -39,7 +39,7 @@ class MediaLib
      *
      * @return array
      */
-    public static function getCollections($filter = []) : array
+    public static function getCollections(array $filter = []) : array
     {
         self::initialize();
         $mltypes = CMedialib::GetTypes();
@@ -98,7 +98,8 @@ class MediaLib
                 $filter['collection_id'] = array_map(
                     function ($val) {
                         return intval($val);
-                    }, $filter['collection_id']
+                    },
+                    $filter['collection_id']
                 );
 
                 $whereQuery[] = 'MCI.COLLECTION_ID in (' . implode(',', $filter['collection_id']) . ')';
@@ -112,7 +113,8 @@ class MediaLib
                 $filter['id'] = array_map(
                     function ($val) {
                         return intval($val);
-                    }, $filter['id']
+                    },
+                    $filter['id']
                 );
 
                 $whereQuery[] = 'MI.ID in (' . implode(',', $filter['id']) . ')';
@@ -129,14 +131,14 @@ class MediaLib
         $whereQuery = implode(' AND ', $whereQuery);
 
         if (isset($navParams['page_size'])) {
-            $queryText = "SELECT COUNT(*) cnt
+            $queryText = 'SELECT COUNT(*) cnt
                 FROM 
                     b_medialib_collection_item MCI
                 INNER JOIN 
                     b_medialib_item MI ON (MI.ID=MCI.ITEM_ID)
                 INNER JOIN 
                     b_file F ON (F.ID=MI.SOURCE_ID) 
-                WHERE " . $whereQuery . ";";
+                WHERE ' . $whereQuery . ';';
 
             $allcount = $connection->query($queryText)->fetch();
             $allcount = ($allcount && $allcount['cnt']) ? $allcount['cnt'] : 0;
@@ -156,21 +158,21 @@ class MediaLib
 
         $resizePreview = array_merge(
             [
-                'width'  => COption::GetOptionInt('fileman', "ml_thumb_width", 140),
-                'height' => COption::GetOptionInt('fileman', "ml_thumb_height", 105),
+                'width'  => COption::GetOptionInt('fileman', 'ml_thumb_width', 140),
+                'height' => COption::GetOptionInt('fileman', 'ml_thumb_height', 105),
                 'exact'  => 0,
             ],
             $resizePreview
         );
 
-        $queryText = "SELECT MI.*,MCI.COLLECTION_ID, F.HEIGHT, F.WIDTH, F.FILE_SIZE, F.CONTENT_TYPE, F.SUBDIR, F.FILE_NAME, F.HANDLER_ID
+        $queryText = 'SELECT MI.*,MCI.COLLECTION_ID, F.HEIGHT, F.WIDTH, F.FILE_SIZE, F.CONTENT_TYPE, F.SUBDIR, F.FILE_NAME, F.HANDLER_ID
             FROM 
                 b_medialib_collection_item MCI
             INNER JOIN 
                 b_medialib_item MI ON (MI.ID=MCI.ITEM_ID)
             INNER JOIN 
                 b_file F ON (F.ID=MI.SOURCE_ID) 
-            WHERE " . $whereQuery . " " . $limitQuery . ";";
+            WHERE ' . $whereQuery . ' ' . $limitQuery . ';';
 
         $dbres = $connection->query($queryText);
 
@@ -262,15 +264,15 @@ class MediaLib
     protected static function urlencodePath(string $path) : string
     {
         $url = parse_url($path);
-        $path = str_replace("\\", "/", $url["path"]);
-        $parts = explode("/", $path);
+        $path = str_replace('\\', '/', $url['path']);
+        $parts = explode('/', $path);
         $partsEncoded = [];
 
         foreach ($parts as $part) {
             array_push($partsEncoded, rawurlencode(urldecode($part)));
         }
 
-        $path = implode("/", $partsEncoded);
+        $path = implode('/', $partsEncoded);
 
         return $path;
     }

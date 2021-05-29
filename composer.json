@@ -26,6 +26,15 @@
     "symfony/http-kernel": "^4.0 || ^5.0",
     "symfony/config": "~4|~5",
     "symfony/framework-bundle": "^4.0 || ^5.0",
-    "symfony/filesystem": "^4.0 || ^5.0"
+    "symfony/filesystem": "^4.0 || ^5.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "proklung/bitrix-phpunit-testing-tools": "^1.1"
+  },
+  "extra": {
+    "installer-paths": {
+      "vendor/sheerockoff/bitrix-ci/files/bitrix/modules/{$name}/": ["type:bitrix-module"]
+    }
   }
 }
