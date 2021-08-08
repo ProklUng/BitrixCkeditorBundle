@@ -21,12 +21,12 @@
     }
   },
   "require": {
-    "php": ">=7.3",
-    "symfony/dependency-injection": "^4.0 || ^5.0",
-    "symfony/http-kernel": "^4.0 || ^5.0",
-    "symfony/config": "~4|~5",
-    "symfony/framework-bundle": "^4.0 || ^5.0",
-    "symfony/filesystem": "^4.0 || ^5.0",
+    "php": ">=7.3 || ^8.0",
+    "symfony/dependency-injection": "^4.4 || ^5.0",
+    "symfony/http-kernel": "^4.4 || ^5.0",
+    "symfony/config": "^4.4 || ^5.0",
+    "symfony/framework-bundle": "^4.4 || ^5.0",
+    "symfony/filesystem": "^4.4 || ^5.0",
     "ext-json": "*"
   },
   "require-dev": {
